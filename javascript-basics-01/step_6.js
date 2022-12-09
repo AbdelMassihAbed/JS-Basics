@@ -1,3 +1,4 @@
+
 const validateButton = document.querySelector("#validate");
 const firstNumInput = document.querySelector("#first_number");
 const secondNumInput = document.querySelector("#second_number");
@@ -10,6 +11,6 @@ secondNumInput.value = num2;
 
 validateButton.addEventListener("click", (e)=>{
     e.preventDefault();
-    alert ("The answer is: " + (num1 * num2));
+    alert ("The answer is: " + (num1 % num2));
     firstNumInput.value = secondNumInput.value = "";
 })
